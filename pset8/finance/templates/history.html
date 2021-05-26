@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %} Portfolio {% endblock %}
+{% block main %}
+
+        <ul class="indexul font-weight-bold">
+            <li>Symbol</li>
+            <li>Name</li>
+            <li>Shares</li>
+            <li>Price</li>
+            <li>Transacted</li>
+        </ul>
+        {% for row in rows %}
+        <ul class="indexul">
+            <li>{{row["symbol"]}}</li>
+            <li>{{row["incname"]}}</li>
+            <li>{{row["shares"]}}</li>
+            <li>${{row["incprice"]}}</li>
+            <li>${{row["trans"]}}</li>
+        </ul>
+        {% endfor %}
+        {% endblock %}

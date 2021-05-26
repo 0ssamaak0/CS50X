@@ -1,0 +1,159 @@
+:root{
+    /* light colors */
+    --navbar-text-color-light: #a7ff83;
+    --navbar-text-color-hover-light: #086972;
+    --text-color-lighter-light: #086972;
+    --text-color-darker-light: #071a52;
+    --background-light: #a7ff83;
+    --navbar-background-light:#086972;
+    --navbar-icon-hover-light:#a7ff83;
+  
+    
+    /* dark colors */
+    --navbar-text-color-dark: #086972;
+    --navbar-text-color-hover-dark: #17b978;
+    --text-color-lighter-dark: #a7ff83;
+    --text-color-darker-dark: #17b978;
+    --background-dark: #086972;
+    --navbar-background-dark:#17b978;
+    --navbar-icon-hover-dark:#086972;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background: var(--background-light);
+}
+body.dark{
+    background: var(--background-dark);
+}
+/* end of main */
+
+/* start of navbar */
+nav{
+    height: 100px;
+    background: var(--navbar-background-light);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+nav.dark{
+    background: var(--navbar-background-dark);
+}
+#logo{
+    margin: auto 15px;
+}
+#navbar-items{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#navbar-items li{
+    display: inline-flex;
+    padding: 20px 35px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#navbar-items li a{
+    color: var(--navbar-text-color-light);
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: auto;
+}
+#navbar-items li a.dark{
+    color: var(--navbar-text-color-dark);
+}
+
+#navbar-items li .fa.fa-adjust{
+    color: var(--navbar-text-color-light);
+    text-decoration: none;
+    font-size: 2em;
+    margin: auto;
+}
+#navbar-items li .fa.fa-adjust.dark{
+    color: var(--navbar-text-color-dark);
+
+}
+
+#navbar-items li:hover{
+    background: var(--navbar-icon-hover-light);
+}
+#navbar-items li.dark:hover{
+    background: var(--navbar-icon-hover-dark);
+}
+#navbar-items li:hover a,  #navbar-items li:hover .fa.fa-adjust{
+    color: var(--navbar-text-color-hover-light);
+}
+#navbar-items li.dark:hover a,  #navbar-items li.dark:hover .fa.fa-adjust{
+    color: var(--navbar-text-color-hover-dark);
+}
+
+.fa.fa-adjust:hover{
+    cursor: pointer;
+}
+
+/* End of navbar */
+
+/* Start of intro */
+#intro{
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-lighter-light);
+    margin-top: 25px;
+}
+#intro.dark{
+    color: var(--text-color-lighter-dark);
+}
+#intro .text{
+    font-size: 4em;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+
+#intro .text.feature{
+    width: 50%;
+}
+#intro .text .smaller{
+    font-size: 0.5em;
+    color: var(--text-color-darker-light);
+}
+#intro .text .smaller.dark{
+    color: var(--text-color-darker-dark);
+}
+#intro .text .spandarker{
+    color: var(--text-color-darker-light);
+}
+#intro .text .spandarker.dark{
+    color: var(--text-color-darker-dark);
+}
+#intro .text a img{
+    margin-top: 35px;
+    margin-bottom: 0;
+    height: 1em;
+}
+#intro .text div.bignote {
+    font-size: 0.5em;
+}
+
+#intro .text div.note {
+    margin: 10px 0;
+    font-size: 0.2em;
+    height: 5px;
+    color: var(--text-color-lighter-light);
+}
+
+#intro .text div.note.dark {
+
+    color: var(--text-color-lighter-dark);
+}
+#mobiles{
+    margin-right: 60px;
+}
+
+
